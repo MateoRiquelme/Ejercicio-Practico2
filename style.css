@@ -1,0 +1,45 @@
+:root {
+   --bg-navbar: #0B132B;
+   --azul-oscuro: #1C2541;
+   --gris-azulado: #3A506B;
+   --celeste: #5BC0BE;
+   --blanco: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header {
+    background: var(--bg-navbar);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0px 30px;
+}
+.logo{
+height: 60px;
+width: 120px;
+object-fit: cover;
+}
+
+.navbar,
+.navbar-list { 
+    display: flex;
+    justify-content:center ;
+    align-content: center;
+}
+
+.navbar-list { 
+    gap: 15px;
+}
+.navbar-list a {
+   color: var(--blanco);
+   font-weight: 600px;
+}
