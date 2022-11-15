@@ -22,6 +22,9 @@ header {
     align-items: center;
     height: 60px;
     padding: 0px 30px;
+    position: fixed;
+    top: 0;
+  
 }
 .logo{
 height: 60px;
@@ -36,10 +39,124 @@ object-fit: cover;
     align-content: center;
 }
 
+.navbar {
+    gap: 150px;
+}
+
 .navbar-list { 
-    gap: 15px;
+    gap: 20px;
+    padding: 15px;
 }
 .navbar-list a {
    color: var(--blanco);
    font-weight: 600px;
 }
+
+.navbar img {
+    font-weight: 600px;
+    object-fit: contain;
+    height: 50px;
+    line-height: 60px ; 
+    width: 55px;
+    /* margin-right: 1rem;
+    padding: 1px 1px; */
+    border:1px solid #FFFFFF;
+    border-radius: 10px;
+
+}
+
+main{
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+color: #FFFFFF;
+width: 100%;
+}
+
+#portada {
+    margin-top: 65px;
+    display: flex;
+    padding: 70px 0;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 50%;
+}
+
+.informacion h1 {
+    font-size: 40px;
+    width: 80px;
+    min-width: 500px;
+    font-weight: 600;
+}
+
+.informacion p {
+    font-size: 14px;
+    width:70%;
+}
+
+.boton a{
+    color: #FFFFFF;
+    background-color: var(--azul-oscuro);
+    width: 100px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 20px ;
+    text-align: center;
+    letter-spacing: 0,3;
+}
+.boton a:hover {
+    background-color: var(--celeste);
+    color: black;
+}
+
+.imagen-div {
+    width: 350px;
+    background-color: var(--bg-navbar);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+.imagen-div img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#post-portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#post-portada h2 {
+    font-size: 35px;
+    font-weight: 200px;
+}
+
+#post-portada p {
+    border-radius: 10px;
+    border: 1px #FFFFFF solid;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+
+
