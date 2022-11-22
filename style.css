@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap');
+
 :root {
    --bg-navbar: #0B132B;
    --azul-oscuro: #1C2541;
@@ -8,7 +11,7 @@
 
 *{
     margin: 0;
-    padding: 0; 
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
@@ -24,7 +27,7 @@ header {
     padding: 0px 30px;
     position: fixed;
     top: 0;
-  
+
 }
 .logo{
 height: 60px;
@@ -33,7 +36,7 @@ object-fit: cover;
 }
 
 .navbar,
-.navbar-list { 
+.navbar-list {
     display: flex;
     justify-content:center ;
     align-content: center;
@@ -43,7 +46,16 @@ object-fit: cover;
     gap: 150px;
 }
 
-.navbar-list { 
+.navbar i {
+    font-size: 36px;
+    display: none;
+}
+
+#toggle-menu {
+    display: none;
+}
+
+.navbar-list {
     gap: 20px;
     padding: 15px;
 }
@@ -52,23 +64,79 @@ object-fit: cover;
    font-weight: 600px;
 }
 
+.navbar-list a:hover {
+    color: rgb(9, 120, 172);
+    /* font-family: Arial, Helvetica, sans-serif; */
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 .navbar img {
     font-weight: 600px;
     object-fit: contain;
     height: 50px;
-    line-height: 60px ; 
+    line-height: 60px ;
     width: 55px;
     /* margin-right: 1rem;
     padding: 1px 1px; */
     border:1px solid #FFFFFF;
     border-radius: 10px;
+    cursor: pointer;
+}
 
+.menu-hamburguesa{
+    display: none;
+    width: 50px;
+    height: 80px;
+}
+
+.menu-hamburguesa ul{
+    display: none;
+}
+
+.menu-hamburguesa input:checked ~ul {
+   display: block; 
+}
+
+.menu-hamburguesa input{
+    display: none;
+}
+
+.menu-hamburguesa label{ 
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    color: #0c96f1;
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+}
+
+.menu-hamburguesa ul{
+ width: 100%;
+ position: absolute;
+ left: 0;
+ background-color: var(--bg-navbar);
+ top: 58px;
+ text-align: center;
+ 
+}
+
+.menu-hamburguesa a{
+    color: #FFFFFF; 
+}
+
+.menu-hamburguesa li{
+    padding: 10px 0px;
+    font-size: 23px;
 }
 
 main{
-    background: #373B44;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+    background: #012c8f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #012c8f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #012c8f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
 flex-direction: column;
 align-items: center;
@@ -77,6 +145,7 @@ color: #FFFFFF;
 width: 100%;
 }
 
+
 #portada {
     margin-top: 65px;
     display: flex;
@@ -84,7 +153,7 @@ width: 100%;
     align-items: center;
     justify-content: center;
     max-width: 1200px;
-    
+
 }
 
 .informacion {
@@ -96,8 +165,7 @@ width: 100%;
 
 .informacion h1 {
     font-size: 40px;
-    width: 80px;
-    min-width: 500px;
+  
     font-weight: 600;
 }
 
@@ -112,6 +180,7 @@ width: 100%;
     width: 100px;
     padding: 10px 10px;
     border-radius: 10px;
+    letter-spacing: 1px;
     font-size: 20px ;
     text-align: center;
     letter-spacing: 0,3;
@@ -122,12 +191,12 @@ width: 100%;
 }
 
 .imagen-div {
-    width: 350px;
+    max-width: 350px;
     background-color: var(--bg-navbar);
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    
+
 }
 .imagen-div img{
     width: 100%;
@@ -143,9 +212,10 @@ width: 100%;
 }
 
 #post-portada h2 {
-    font-size: 35px;
-    font-weight: 200px;
+    font-size: 45px;
+    font-weight: 800px;
 }
+
 
 #post-portada p {
     border-radius: 10px;
@@ -154,6 +224,133 @@ width: 100%;
     text-align: center;
     justify-content: center;
 }
+
+
+ /* 2da section */
+
+
+#cards {
+    padding: 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+h1 {
+    color: rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("https://us.123rf.com/450wm/taszanatasha/taszanatasha1511/taszanatasha151100445/47690823-animales-fondo-abstracto-vaca-sin-patr%C3%B3n-.jpg?ver=6");
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+
+#cards h2 {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+   align-items: flex-start;
+   justify-content: space-around;
+   gap: 20px;
+}
+
+.info-cards {
+    width: 300px;
+    height: 290px;
+    padding: 40px 30px;
+    border: #0B132B solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    flex-direction: column;
+    background-color: var(--bg-navbar);
+    border-radius: 10px;
+}
+
+.info-cards img {
+    width: 100px;
+    border-radius: 30px;
+}
+
+ /* parte 3 trabajo */
+
+footer {
+    background-color: var(--bg-navbar);
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    flex-direction: column;
+}
+
+footer .logo {
+    margin-top: 10px;
+    width: 200px;
+    height: 100px;
+}
+
+.social-icon-container, .menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 1rem;
+}
+ 
+.menu-container a {
+    color: aliceblue;
+}
+
+.social-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    border: #FFFFFF solid 0.1px;
+    margin-bottom: 1.5rem;
+}
+
+.social-icon:hover {
+    transition: all .5s ease-in-out;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 5px 5px #1ebcec;
+    -webkit-box-shadow: 0px 0px 5px 5px #1ec3ec;
+    -webkit-transform:scale(1.2);transform:scale(1.2);
+    overflow:hidden; 
+    /* transform: rotate(360deg);
+    -webkit-transform: rotate(360deg); */
+    
+}
+
+.menu-container :hover {
+    color: rgb(9, 120, 172);
+    /* font-family: Arial, Helvetica, sans-serif; */
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+
+
+
+
+
+
+
 
 
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./media.css">
 </head>
 <body>
     <header>
@@ -20,6 +21,16 @@
             </ul>
             <img src="./header_img/vaca-carrito.png" alt="">
         </nav>
+        <div class="menu-hamburguesa">
+            <input type="checkbox" id="toggle-menu">
+            <label for="toggle-menu">☰</label>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Clientes</a></li>
+                <li><a href="#">Contactanos</a></li> 
+            </ul>
+        </div>
     </header>   
     <main>
         <section id="portada">
@@ -41,7 +52,42 @@
             <h2>Nosotros</h2>
             <p>Somos un pequeño grupo de desarrolladores full stack en crecimiento, muy dedicados.</p>
         </section>
+
+        <section id="cards">
+            <h2>¿Por qué trabajar con nosotros?</h2>
+            <div class="container-cards">
+                <div class="info-cards">
+                    <img src="./posibles imagenes/vaca-con-una-pc.png" alt="">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                 </div>
+                 <div class="info-cards">
+                    <img src="./posibles imagenes/vaca-skate.webp" alt="">
+                    <h3>Lorem ipsum dolor sit amet consectetur </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                 </div>
+                 <div class="info-cards">
+                    <img src="./posibles imagenes/vaca-tomando-lechita.jpg" alt="">
+                    <h3>Lorem ipsum dolor sit amet consectetur </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                 </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <img src="./header_img/Logo.png" alt="" class="logo">
+        <div class="social-icon-container">
+            <a href="" class="social-icon"> <img src="./iconos-footer/Icono-face.jpg" alt="" class="social-icon"></a>
+            <a href="" class="social-icon"> <img src="./iconos-footer/icono-gmail.jpg" alt="" class="social-icon"></a>
+            <a href="" class="social-icon"><img src="./iconos-footer/icono-twitter.jpg" alt="" class="social-icon"></a>
+        </div>
+        <ul class="menu-container">
+            <li><a href="">Terminos y condiciones</a></li>
+            <li><a href="">Politica de Privacidad</a></li>
+            <li><a href=""> Preguntas Frecuentes</a></li>
+            <li><a href="">Cookies</a></li>
+        </ul>
+    </footer>
     
 </body>
 </html>

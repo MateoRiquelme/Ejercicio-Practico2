@@ -1,0 +1,63 @@
+@media (max-width:768px)
+{
+.navbar {
+  display: none;
+}
+.menu-hamburguesa{
+    display: block;
+}
+
+#portada{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px
+}
+
+.informacion {
+    width: 100%;
+    align-items: center;
+    justify-content: center; 
+}
+
+.informacion h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.informacion p {
+    font-size: 18px;
+}
+
+}
+
+@media (max-width:320px)
+{
+ .imagen-div{
+    width: 250px;
+ }
+
+ .informacion p{
+text-align: center;
+
+ }
+ #post-portada h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+ }
+
+#post-portada p {
+    width: 80%;
+}
+
+#cards h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+
+ }
